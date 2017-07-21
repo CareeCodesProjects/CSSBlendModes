@@ -1,0 +1,129 @@
+/* ---------------------------------- 
+*
+*  Blend Modes
+* 
+* --------------------------------- */
+.blend-mode- {
+	&normal { mix-blend-mode: normal; }
+	&multiply { mix-blend-mode: multiply; }
+	&screen { mix-blend-mode: screen; }
+	&overlay { mix-blend-mode: overlay; }
+	&darken { mix-blend-mode: darken; }
+	&lighten { mix-blend-mode: lighten; }
+	&color-dodge { mix-blend-mode: color-dodge; }
+	&color-burn { mix-blend-mode: color-burn; }
+	&hard-light { mix-blend-mode: hard-light; }
+	&soft-light { mix-blend-mode: soft-light; }
+	&difference { mix-blend-mode: difference; }
+	&exclusion { mix-blend-mode: exclusion; }
+	&hue { mix-blend-mode: hue; }
+	&saturation { mix-blend-mode: saturation; }
+	&color { mix-blend-mode: color; }
+	&luminosity { mix-blend-mode: luminosity; }
+	&initial { mix-blend-mode: initial; }
+	&unset { mix-blend-mode: unset; }
+}
+
+
+/* ---------------------------------- 
+*
+*  General Styling
+* 
+* --------------------------------- */
+body {
+	background-color: #222;
+	color: #fff;
+}
+
+.checked {
+	background-color: #fff;
+	color: #171717;
+}
+
+// --- Header --- //
+header {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	margin: 50px 0 75px;
+	
+	h1 {
+		font-size: 5em;
+	}
+	h2 {
+		font-size: 2.5em;
+	}
+}
+
+// --- Circles --- //
+$diameter: 175px;
+$radius: $diameter/2;
+
+#wrapper {
+	width: $diameter * 5;
+	margin: 0 auto;
+}
+
+.circle {
+	box-sizing: border-box;
+	height: $diameter;
+	width: $diameter;
+	border-radius: 50%;
+	position: relative;
+	float: left;
+		
+		&:nth-child(1){
+			background-color: rebeccapurple;
+			left: $diameter;
+			}
+		&:nth-child(2){
+			background-color: #DB3939;
+			left: $radius;
+			}
+		&:nth-child(3){
+			background-color: #F7F260;
+			}
+		&:nth-child(4){
+			background-color: #348534;
+			right: $radius;
+			}
+		&:nth-child(5){
+			background-color: #3962DB;
+			right: $diameter;
+			}
+}
+
+// --- Buttons --- ///
+#buttons {
+	width: 75%;
+	margin: 50px auto;
+	text-align: center;
+	
+	button {
+		margin: 3px 0;
+	}
+	
+	#background {
+		width: 100%;
+	}
+}
+
+// --- Footer --- //
+footer {
+	position: absolute;
+	bottom: 0;
+	background-color: #222;
+	color: #fff;
+	width: 100%;
+	padding: 50px;
+	text-align: center;
+	font-family: sans-serif;
+	
+	a {
+		color: inherit;
+	}
+}
+
+// --- Hacky Spacer (sorry...) --- //
+#spacer {
+	height: 250px;
+}

@@ -1,0 +1,149 @@
+/* ---------------------------------- 
+*
+*  Blend Modes
+* 
+* --------------------------------- */
+.blend-mode-normal {
+  mix-blend-mode: normal;
+}
+.blend-mode-multiply {
+  mix-blend-mode: multiply;
+}
+.blend-mode-screen {
+  mix-blend-mode: screen;
+}
+.blend-mode-overlay {
+  mix-blend-mode: overlay;
+}
+.blend-mode-darken {
+  mix-blend-mode: darken;
+}
+.blend-mode-lighten {
+  mix-blend-mode: lighten;
+}
+.blend-mode-color-dodge {
+  mix-blend-mode: color-dodge;
+}
+.blend-mode-color-burn {
+  mix-blend-mode: color-burn;
+}
+.blend-mode-hard-light {
+  mix-blend-mode: hard-light;
+}
+.blend-mode-soft-light {
+  mix-blend-mode: soft-light;
+}
+.blend-mode-difference {
+  mix-blend-mode: difference;
+}
+.blend-mode-exclusion {
+  mix-blend-mode: exclusion;
+}
+.blend-mode-hue {
+  mix-blend-mode: hue;
+}
+.blend-mode-saturation {
+  mix-blend-mode: saturation;
+}
+.blend-mode-color {
+  mix-blend-mode: color;
+}
+.blend-mode-luminosity {
+  mix-blend-mode: luminosity;
+}
+.blend-mode-initial {
+  mix-blend-mode: initial;
+}
+.blend-mode-unset {
+  mix-blend-mode: unset;
+}
+
+/* ---------------------------------- 
+*
+*  General Styling
+* 
+* --------------------------------- */
+body {
+  background-color: #222;
+  color: #fff;
+}
+
+.checked {
+  background-color: #fff;
+  color: #171717;
+}
+
+header {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  margin: 50px 0 75px;
+}
+header h1 {
+  font-size: 5em;
+}
+header h2 {
+  font-size: 2.5em;
+}
+
+#wrapper {
+  width: 875px;
+  margin: 0 auto;
+}
+
+.circle {
+  box-sizing: border-box;
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  position: relative;
+  float: left;
+}
+.circle:nth-child(1) {
+  background-color: rebeccapurple;
+  left: 175px;
+}
+.circle:nth-child(2) {
+  background-color: #DB3939;
+  left: 87.5px;
+}
+.circle:nth-child(3) {
+  background-color: #F7F260;
+}
+.circle:nth-child(4) {
+  background-color: #348534;
+  right: 87.5px;
+}
+.circle:nth-child(5) {
+  background-color: #3962DB;
+  right: 175px;
+}
+
+#buttons {
+  width: 75%;
+  margin: 50px auto;
+  text-align: center;
+}
+#buttons button {
+  margin: 3px 0;
+}
+#buttons #background {
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #222;
+  color: #fff;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  font-family: sans-serif;
+}
+footer a {
+  color: inherit;
+}
+
+#spacer {
+  height: 250px;
+}
